@@ -7,9 +7,48 @@
 </head>
 
 <body>
+<form action="https://formspree.io/mat1489@op.pl" method="POST">
+<!--formularz danych osobowych imie nazwisko email telefon-->
+<input type="text" placeholder="imie" name="imie">
+<br>
+<input type="text" placeholder="nazwisko" name="nazwisko"> 
+<br>
+<input type="email" placeholder="email" name="email"> 
+<br>
+<input type="tel" placeholder="telefon" name="tel" maxlength="9">
+<br>
+
+
+<!--select wybor miasta-->
+<label>Wybierz miasto
+<select name="miasto" id="miasto">
+    <option>Kraków</option>
+    <option>Warszawa</option>
+    <option>Gdańsk</option>
+</select><br></label>
+
+
+<!--radio wybor plci-->
+<input type="radio" name="plec" value="mezczyzna" checked> mezczyzna<br>
+<input type="radio" name="plec" value="kobieta"> kobieta<br>
 
 
 
+<!--checkbox zgoda na dane osobowe-->
+<input type="checkbox" name="zgoda" value="zgoda"> Zgoda na dane osobowe<br>
+
+
+<!--textarea wiadomosc-->
+<label for="wiadomosc">wiadomosc<br>
+
+<textarea rows="4" cols="50" id="wiadomosc" placeholder="wiadomosc" name="wiadomosc"></textarea>
+</label><br>
+
+
+<!--submit wyslij-->
+<input type="submit" value="Wyslij">
+
+</form>
 </body>
 
 </html>
